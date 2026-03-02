@@ -1,0 +1,154 @@
+# RolePlayProfession 配置文件
+# ScriptIrc-config-version: 1
+
+# 插件设置
+plugin:
+  # 是否启用调试模式
+  debug: false
+  # 自动保存间隔（秒）
+  auto-save-interval: 300
+  # 默认语言
+  default-language: "zh_CN"
+
+# 经济系统设置
+economy:
+  # 插件内货币名称
+  currency-name: "职业币"
+  # 货币符号
+  currency-symbol: "§6Ⓟ§f"
+  # 初始资金
+  start-money: 1000
+  # 每日登录奖励
+  daily-login-bonus: 100
+  # 工资发放间隔（分钟）
+  salary-interval: 60
+
+# 职业系统设置
+professions:
+  # 职业解锁等级要求
+  unlock-levels:
+    police: 5
+    firefighter: 3
+    medic: 4
+    customs: 6
+    chef: 2
+    waiter: 1
+    farmer: 1
+  
+  # 基础工资（每小时）
+  base-salary:
+    police: 500
+    firefighter: 450
+    medic: 480
+    customs: 520
+    chef: 300
+    waiter: 250
+    farmer: 280
+  
+  # 职业最大等级
+  max-level: 50
+  # 升级所需经验倍数
+  level-up-multiplier: 1.5
+
+# NPC系统设置
+npc:
+  # NPC生成密度（每区块）
+  spawn-density: 0.1
+  # NPC最大数量
+  max-npcs: 100
+  # NPC活动范围（区块）
+  activity-range: 16
+  # NPC刷新间隔（秒）
+  refresh-interval: 30
+  
+  # NPC行为概率（0-100）
+  behavior-probability:
+    walk: 40
+    talk: 20
+    work: 30
+    rest: 10
+  
+  # NPC报警概率（当看到犯罪时）
+  call-police-probability: 70
+  # NPC求救概率（当受伤时）
+  call-medic-probability: 80
+
+# 任务系统设置
+quests:
+  # 每日任务数量
+  daily-quests-per-player: 3
+  # 紧急任务冷却时间（秒）
+  emergency-quest-cooldown: 300
+  # 任务奖励倍数
+  reward-multiplier: 1.0
+  
+  # 各职业任务权重
+  profession-quest-weights:
+    police: 25
+    firefighter: 20
+    medic: 20
+    customs: 15
+    chef: 10
+    waiter: 5
+    farmer: 5
+
+# 技能系统设置
+skills:
+  # 技能点获取速度
+  skill-points-per-hour: 1
+  # 最大技能等级
+  max-skill-level: 10
+  # 技能升级消耗倍数
+  upgrade-cost-multiplier: 2.0
+
+# 互动系统设置
+interactions:
+  # 抓捕系统
+  arrest:
+    # 抓捕冷却时间（秒）
+    cooldown: 30
+    # 最大抓捕距离
+    max-distance: 10
+    # 抓捕成功奖励
+    reward: 200
+  
+  # 救援系统
+  rescue:
+    # 救援冷却时间（秒）
+    cooldown: 20
+    # 最大救援距离
+    max-distance: 8
+    # 救援成功奖励
+    reward: 150
+  
+  # 服务系统
+  service:
+    # 点餐冷却时间（秒）
+    order-cooldown: 10
+    # 送餐奖励
+    delivery-reward: 50
+    # 烹饪奖励
+    cooking-reward: 80
+
+# GUI设置
+gui:
+  # GUI标题颜色
+  title-color: "§6§l"
+  # 按钮颜色
+  button-color: "§a"
+  # 信息颜色
+  info-color: "§7"
+  # 错误颜色
+  error-color: "§c"
+  
+  # 自动关闭时间（秒，0为不自动关闭）
+  auto-close-time: 30
+
+# 数据库设置
+database:
+  # 存储类型：yml 或 sqlite
+  storage-type: "yml"
+  # SQLite数据库文件（如果使用sqlite）
+  sqlite-file: "roleplay.db"
+  # 数据保存间隔（秒）
+  save-interval: 60

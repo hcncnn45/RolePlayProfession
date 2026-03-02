@@ -1,0 +1,52 @@
+name: RolePlayProfession
+version: '1.0.0'
+main: io.Sriptirc_wp_1198.roleplayprofession.Roleplayprofession
+api-version: '1.20'
+authors: ['wp:1198']
+load: POSTWORLD
+folia-supported: true
+description: '一个全面的角色扮演职业系统，包含警察、消防、医护、海关、厨师、服务员、农民等职业，增强NPC路人，支持玩家互动和经济系统'
+commands:
+    roleplay:
+        description: '打开角色扮演主菜单'
+        aliases: ['rp']
+    rpjob:
+        description: '职业相关命令'
+        aliases: ['job']
+    rpeconomy:
+        description: '经济系统命令'
+        aliases: ['money', 'eco']
+    rpnpc:
+        description: 'NPC管理命令'
+        aliases: ['npc']
+permissions:
+    roleplay.use:
+        description: '使用角色扮演系统'
+        default: false
+    roleplay.admin:
+        description: '管理员权限'
+        default: false
+    roleplay.police:
+        description: '警察职业权限'
+        default: false
+    roleplay.fire:
+        description: '消防员职业权限'
+        default: false
+    roleplay.medic:
+        description: '医护人员权限'
+        default: false
+    roleplay.customs:
+        description: '海关人员权限'
+        default: false
+    roleplay.chef:
+        description: '厨师职业权限'
+        default: false
+    roleplay.waiter:
+        description: '服务员职业权限'
+        default: false
+    roleplay.farmer:
+        description: '农民职业权限'
+        default: false
+    roleplay.npc.manage:
+        description: '管理NPC权限'
+        default: false
